@@ -1,0 +1,15 @@
+Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+0/99      7.13G     0.1128    0.04515    0.05437        202        640:   1%|          | 5/669 [00:22<45:40,  4.13s/it]  batch_size of 32, perf. GPU_mem 7.6 GB / 8 GB
+
+
+Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+0/99      3.68G     0.1078    0.04563    0.05277         86        640:   7%|▋         | 89/1338 [02:55<40:53,  1.96s/it] batch size of 16, perf. GPU_mem 
+
+
+Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+0/99      1.68G        nan        nan        nan         24        640:   1%|          | 27/2676 [00:29<44:30,  1.01s/it] batch size of 8, perf. GPU_mem 2.6 GB / 8 GB
+
+
+
+Batch size of 16 seems to be the best alternative
+Or maybe 32

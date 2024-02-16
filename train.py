@@ -5,8 +5,11 @@ Models and datasets download automatically from the latest YOLOv5 release.
 
 Usage - Single-GPU training:
     $ python train.py --data coco128.yaml --weights yolov5s.pt --img 640  # from pretrained (recommended)
+    $ python train.py --data trafficoco.yaml --weights yolov5s.pt --imgsz 640 --epochs 250 --batch-size 16  (recommended)
     $ python train.py --data coco128.yaml --weights [string]::Empty --cfg yolov5s.yaml --img 640  # from scratch
     $ python train.py --data trafficoco.yaml --weights [string]::Empty --cfg yolov5s.yaml  --img 640 --epochs 100 --batch-size 16  # from scratch
+    (dont train it from scratch, yolo is made to train the head even if number of classes change)
+    
 
 Usage - Multi-GPU DDP training:
     $ python -m torch.distributed.run --nproc_per_node 4 --master_port 1 train.py --data coco128.yaml --weights yolov5s.pt --img 640 --device 0,1,2,3
